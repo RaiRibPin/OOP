@@ -9,7 +9,7 @@
             $this->descricao = $arg05;
         }
         private string $tipoImovel;
-        protected float $valor;
+        private float $valor;
         public string $regiao;
         protected float $metragem;
         private string $descricao;
@@ -25,14 +25,17 @@
 
     class Rural extends Imóveis {
         //sobrecarga, sobrescrever a função herdada.
-        function __construct(){
-
+        function __construct(){}
+        function teste(){
+            $this->valor;
         }
     }
 
     $Imovel02 = new Rural();
+    $Imovel02->tipoImovel = "Casa";
+    echo $Imovel02->tipoImovel;
 
-    $Imovel01 = new Imóveis("tipoImovel", 10, "regiao", 200, "descricao");
+    $Imovel01 = new Imóveis("Condomínio", 2, "Zona Sul", 240, "Condomínio Vida Bela localizado na região nobre da cidade de Sorocaba.");
     // $Imovel01->regiao = "Zona Norte";
     // $Imovel01->tipoImovel = "Comercial";
     // $Imovel01->descricao = "Espaço bem localizado na Avenida Itavuvu";
@@ -43,6 +46,4 @@
     echo "Valor: ", $Imovel01-> valor . "\n";
     echo "Metragem: ", $Imovel01->metragem . "\n";
     echo "Descrição: ", $Imovel01->descricao . "\n";
-
-    
 ?>
