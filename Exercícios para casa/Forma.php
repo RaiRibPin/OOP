@@ -1,7 +1,6 @@
 <?php
-    class Forma {
-        function calcularÁrea($lado1, $lado2){
-            return $lado1 * $lado2;
-        }
+    abstract class Forma {
+        abstract public function calcularÁrea();
+        abstract public function calcularPerímetro();
     }
 ?>

@@ -12,6 +12,8 @@
     }
 
     $cirfilho01 = new CirFilho();
-    echo "Circunferência: {$cirfilho01->getCircunferência()}";
+    echo "<h2>Círculo</h2>";
+    echo "Circunferência: {$cirfilho01->getCircunferência()}<br>";
+    echo "Área: {$cirfilho01->getÁrea()}";
 
 ?>
