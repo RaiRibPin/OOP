@@ -5,6 +5,8 @@
         private $base;
         private $altura;
 
+        const MSG = "Faço parte da Classe Triângulo Retângulo";
+
         public function __construct($base, $altura){
             $this->base = $base;
             $this->altura = $altura;
@@ -20,4 +22,9 @@
             return $this->base + $this->altura + $hipotenusa;
         }
     }
+
+    $triretangulobjeto = new TriânguloRetângulo(4, 7);
+    echo "<h2>" . $triretangulobjeto::MSG . "</h2>";
+    echo "Área: " . $triretangulobjeto->calcularÁrea() . "<br>";
+    echo "Perímetro: " . $triretangulobjeto->calcularPerímetro();
 ?>
